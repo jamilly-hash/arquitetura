@@ -49,4 +49,22 @@ function filtrar(btn, cat) {
   });
 }
 
+// Envio do formulário com mensagem de sucesso
+document.querySelector('.form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  const response = await fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    body: data
+  });
+  if (response.ok) {
+    form.reset();
+    document.getElementById('msg-sucesso').style.display = 'block';
+    setTimeout(() => {
+      document.getElementById('msg-sucesso').style.display = 'none';
+    }, 5000);
+  }
+});
+
 
