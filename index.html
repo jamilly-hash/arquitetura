@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kislla Pontes — Arquitetura e Interiores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav>
+  <a href="#inicio">
+    <img src="./imagens/logonova.png" alt="Kislla Pontes Arquitetura e Interiores" class="logo-img" />
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#inicio" class="ativo">Início</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#contato" class="btn-nav">Vamos Conversar</a></li>
+  </ul>
+  <button class="menu-mobile" id="menuBtn" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section id="inicio"> 
+  <div class="hero-texto fade vis"> <!--Texto do lado esquerdo do hero, com classe de animação para fade-in -->
+    <p class="tag">Arquitetura que transforma</p> <!--Texto inicial-->
+    <h1 class="hero-titulo">Projetamos espaços<br>para viver histórias.</h1> <!--Texto principal-->
+    <div class="linha-d"></div> <!--Linha divisória-->
+    <p class="hero-desc">Soluções arquitetônicas personalizadas que unem estética, funcionalidade e bem-estar em cada detalhe.</p> <!--Texto secundário-->
+    <a href="#projetos" class="btn-primario">Conheça nossos projetos</a> <!--Botão para conhecer os projetos-->
+  </div>
+  <!-- FOTO PRINCIPAL-->
+<div class="hero-img-wrap">
+  <img src="imagens/escritório.png" alt="Projeto principal" />
+</div>
+</section>
+
+<!-- ========== ÍCONES ========== -->
+<div class="hero-icones"> <!--Blocos de ícones com texto, cada um representando um valor ou diferencial da empresa, com animação de fade-in para aparecer suavemente quando o usuário rolar a página-->
+  <div class="icone-bloco fade vis"> <!--Bloco do ícone, com classe de animação para fade-in -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="18" rx="1"/><path d="M8 3v18M16 3v18M2 12h20"/></svg>
+    <div>
+      <p class="icone-titulo">Projetos Autorais</p>
+      <p class="icone-desc">Cada projeto é único, pensado para refletir quem você é.</p>
+    </div>
+  </div>
+  <div class="icone-bloco fade vis">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2C8 2 4 5 4 10c0 5 8 12 8 12s8-7 8-12c0-5-4-8-8-8z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    <div>
+      <p class="icone-titulo">Funcionalidade</p>
+      <p class="icone-desc">Espaços inteligentes que facilitam o dia a dia.</p>
+    </div>
+  </div>
+  <div class="icone-bloco fade vis">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div>
+      <p class="icone-titulo">Bem-Estar</p>
+      <p class="icone-desc">Ambientes que promovem conforto, leveza e conexão.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ========== PROJETOS DESTAQUE HOME ========== -->
+<div class="destaque-wrap">
+  <div class="container">
+    <div class="destaque-header">
+      <div>
+        <p class="tag">Projetos em destaque</p>
+        <h2 class="titulo-secao fade" style="margin-top:10px">Alguns dos nossos<br>trabalhos.</h2>
+      </div>
+      <a href="#projetos" class="link-ver">Ver todos os projetos &nbsp;→</a>
+    </div>
+    <div class="grid-3">
+      <div class="card-proj fade vis">
+        <img src="imagens/ConsultórioOdontológico.png" alt="Consultório Odontológico" />
+        <div class="card-overlay">
+          <p class="card-tipo">Comercial</p>
+          <p class="card-nome">Consultório Odontológico</p>
+        </div>
+      </div>
+
+      <div class="card-proj fade vis">
+        <img src="imagens/AO-aeroporto01.png" alt="Área Operacional Aeroporto" />
+        <div class="card-overlay">
+          <p class="card-tipo">Comercial</p>
+          <p class="card-nome">Área Operacional Aeroporto</p>
+        </div>
+      </div>
+
+      <div class="card-proj fade vis">
+        <img src="imagens/restaurante-popular.png" alt="Restaurante Popular" />
+        <div class="card-overlay">
+          <p class="card-tipo">Comercial</p>
+          <p class="card-nome">Restaurante Popular</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== SOBRE ========== -->
+<section id="sobre">
+  <div class="sobre-grid">
+    <div class="sobre-img-wrap">
+      <img src="imagens/frenteescritorio.png" alt="Escritório" />
+    </div>
+    <div class="sobre-conteudo fade vis">
+      <p class="tag">Sobre</p>
+      <h2 class="sobre-titulo">Arquitetura que<br>transforma espaços<br>e vidas.</h2>
+      <div class="linha-d"></div>
+      <p class="sobre-p">Acreditamos que a arquitetura vai além da estética. Ela influencia emoções, cria experiências e melhora a forma como as pessoas vivem e se conectam com os espaços.</p>
+      <p class="sobre-p">Nosso propósito é projetar com sensibilidade, funcionalidade e atenção aos detalhes, sempre respeitando a essência de cada cliente.</p>
+      <div class="sobre-valores">
+        <div class="valor fade">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <p class="valor-nome">Personalização</p>
+          <p class="valor-desc">Cada projeto é único, feito sob medida para cada cliente.</p>
+        </div>
+        <div class="valor fade">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="18" rx="1"/><path d="M8 3v18"/></svg>
+          <p class="valor-nome">Funcionalidade</p>
+          <p class="valor-desc">Soluções inteligentes que facilitam o cotidiano.</p>
+        </div>
+        <div class="valor fade">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <p class="valor-nome">Atenção aos Detalhes</p>
+          <p class="valor-desc">Cada etapa executada com precisão e sensibilidade.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJETOS GALERIA ========== -->
+<section id="projetos">
+  <div class="container">
+    <div class="projetos-top">
+      <div>
+        <p class="tag">Projetos</p>
+        <h2 class="titulo-secao fade" style="margin-top:10px">Projetos que<br>contam histórias.</h2>
+        <div class="linha-d" style="margin-top:20px"></div>
+        <p style="font-size:14px;color:var(--cinza-medio);max-width:320px;margin-top:16px;line-height:1.85">Cada projeto é desenvolvido para refletir a identidade e o estilo de vida de quem o habita, unindo beleza, funcionalidade e bem-estar.</p>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="filtros">
+      <button class="filtro ativo" onclick="filtrar(this,'todos')">Todos</button>
+      <button class="filtro" onclick="filtrar(this,'residencial')">Residenciais</button>
+      <button class="filtro" onclick="filtrar(this,'comercial')">Comerciais</button>
+      <button class="filtro" onclick="filtrar(this,'interiores')">Interiores</button>
+    </div>
+
+    <div class="galeria" id="galeria">
+      <!--
+        Para cada foto do portfólio:
+
+        <div class="galeria-item fade" data-cat="residencial">
+          <img src="imagens/projeto-X.jpg" alt="Nome do projeto" />
+        </div>
+
+        data-cat pode ser: residencial | comercial | interiores
+      -->
+      <div class="galeria-item fade" data-cat="residencial">
+          <div class="galeria-img-wrap">
+            <img src="imagens/Chacara.png" alt="Chácara" />
+          </div>
+          <p class="galeria-legenda">Chácara</p>
+      </div>
+      <div class="galeria-item fade" data-cat="comercial">
+          <div class="galeria-img-wrap">
+            <img src="imagens/restaurante-jp02.png" alt="Restaurante Japonês" />
+          </div>
+          <p class="galeria-legenda">Restaurante Japonês</p>
+      </div>
+      <div class="galeria-item fade" data-cat="comercial">
+          <div class="galeria-img-wrap">
+            <img src="imagens/clinica-recepcao.png" alt="Recepção da Clínica" />
+          </div>
+          <p class="galeria-legenda">Clínica</p>
+      </div>
+      <div class="galeria-item fade" data-cat="residencial">
+          <div class="galeria-img-wrap">
+            <img src="imagens/residencial01 (2).png" alt="Casa JG" />
+          </div>
+          <p class="galeria-legenda">Casa J&G</p>
+      </div>
+      <div class="galeria-item fade" data-cat="interiores">
+          <div class="galeria-img-wrap">
+            <img src="imagens/restaurante-jp5.png" alt="Restaurante" />
+          </div>
+          <p class="galeria-legenda">Restaurante Interior</p>
+      </div>
+      <div class="galeria-item fade" data-cat="interiores">
+          <div class="galeria-img-wrap">
+            <img src="imagens/area-gourmet.png" alt="Área Gourmet" />
+          </div>
+          <p class="galeria-legenda">Área Gourmet</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVIÇOS ========== -->
+<section id="servicos">
+  <div class="container">
+    <div class="servicos-layout">
+      <div>
+        <p class="tag">Serviços</p>
+        <h2 class="titulo-secao fade" style="margin-top:10px">Soluções completas<br>para o seu projeto.</h2>
+        <div class="linha-d" style="margin-top:20px;margin-bottom:16px"></div>
+        <p style="font-size:14px;color:var(--cinza-medio);max-width:360px;line-height:1.88">Atuamos em todas as etapas do projeto para garantir um resultado que une estética, funcionalidade e qualidade.</p>
+        <div class="servicos-lista">
+          <div class="servico fade">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="18" rx="1"/><path d="M2 9h20M8 3v6"/></svg>
+            <p class="servico-nome">Projeto Arquitetônico</p>
+            <p class="servico-desc">Desenvolvimento completo do projeto, com foco em funcionalidade, estética e conforto.</p>
+          </div>
+          <div class="servico fade">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <p class="servico-nome">Acompanhamento de Obra</p>
+            <p class="servico-desc">Gestão e acompanhamento para assegurar que o projeto seja executado com excelência.</p>
+          </div>
+          <div class="servico fade">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5"/></svg>
+            <p class="servico-nome">Design de Interiores</p>
+            <p class="servico-desc">Ambientes planejados nos mínimos detalhes para refletir personalidade e bem-estar.</p>
+          </div>
+          <div class="servico fade">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+            <p class="servico-nome">Projetos Comerciais</p>
+            <p class="servico-desc">Soluções estratégicas para espaços comerciais que fortalecem marcas e experiências.</p>
+          </div>
+          <div class="servico fade">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+            <p class="servico-nome">Consultoria</p>
+            <p class="servico-desc">Orientações personalizadas para transformar ideias em soluções inteligentes.</p>
+          </div>
+          <div class="servico fade">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <p class="servico-nome">Regularização</p>
+            <p class="servico-desc">Apoio em processos e documentos necessários para aprovação e regularização de projetos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="servicos-img-wrap">
+    <!-- imagem de ambiente, obra ou serviço
+
+    <img src="imagens/servicos.jpg" alt="Serviços" />
+    -->
+    <img src="imagens/restaurante-jp3.png" alt="Serviços" />
+  </div>
+</section>
+
+<!-- ========== CONTATO ========== -->
+<section id="contato">
+  <div class="container">
+    <div class="contato-layout">
+      <div>
+        <p class="tag">Contato</p>
+        <h2 class="titulo-secao fade" style="margin-top:10px">Vamos conversar<br>sobre o seu projeto?</h2>
+        <div class="linha-d" style="margin-top:20px;margin-bottom:16px"></div>
+        <p style="font-size:14px;color:var(--cinza-medio);max-width:340px;line-height:1.88">Será um prazer entender suas ideias e transformá-las em realidade.</p>
+        <div class="contato-infos">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .9h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <!-- telefone Kislla -->
+            <span>(81) 97303-2572</span>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <!-- e-mail Kislla -->
+            <span>kisllapontesarquitetura@outlook.com</span>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <!-- Cidade de atuação -->
+            <span>Campina Grande — João Pessoa — Guarabira </span>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Seg – Sex: 08h – 18h</span>
+          </div>
+        </div>
+      </div>
+
+<form class="form" action="https://api.web3forms.com/submit" method="POST" > <!-- CHAVE -->
+
+  <input type="hidden" name="access_key" value="ff291411-4fdc-4e81-b4ab-c89c0b415d97" />
+  <input type="hidden" name="subject" value="Novo contato pelo site - Kislla Pontes" />
+
+  <input class="form-input" type="text" name="name" placeholder="Nome" required />
+  <input class="form-input" type="email" name="email" placeholder="E-mail" required />
+
+
+  <input 
+    class="form-input"
+    type="tel"
+    name="phone"
+    placeholder="Telefone"
+  />
+
+  <input 
+    class="form-input"
+    type="text"
+    name="subject"
+    placeholder="Assunto"
+  />
+
+  <textarea 
+    class="form-input"
+    name="message"
+    placeholder="Mensagem"
+    rows="4"
+    required
+  ></textarea>
+
+  <button class="btn-enviar" type="submit">
+    Enviar Mensagem
+  </button>
+
+</form>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <img src="imagens/logo2.png" alt="Kislla Pontes" class="footer-logo" />
+  <p class="footer-copy">© 2026 Kislla Pontes Arquitetura e Interiores. Todos os direitos reservados.</p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/kisllapontesarq?igsh=MTRuOXZjeTh3aHFqMw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a href="https://wa.me/5581973032572" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    </a>
+    <a href="#contato" aria-label="E-mail" title="Enviar mensagem">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+</a>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script src="theme.js"></script>
+
+</body>
+</html>
